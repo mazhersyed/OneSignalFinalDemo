@@ -1,0 +1,38 @@
+﻿@model IEnumerable<MyOneSignalDemo.Models.ServiceResponse>
+@{
+    ViewBag.Title = "View App";
+}
+
+<h2>ViewApp</h2>
+<div class="clearfix">
+    <div class="col-md-12">
+        @using (Html.BeginForm("AppManagement", "Home", FormMethod.Get))
+        {
+            <div class="divTable">
+                <div class="divTableBody">
+                    <div class="divTableRow">
+                        <div class="divTableCell"><b>ID</b></div>
+                        <div class="divTableCell"><b>Name</b></div>
+                        <div class="divTableCell"><b>Created On</b></div>
+                        <div class="divTableCell"><b>Updated On</b></div>
+                        <div class="divTableCell"></div>
+                    </div>
+                    @foreach (var item in Model)
+                    {
+                        <div class="divTableRow">
+                            <div class="divTableCell">@item.id</div>
+                            <div class="divTableCell">@item.name</div>
+                            <div class="divTableCell">@item.created_at</div>
+                            <div class="divTableCell">@item.updated_at</div>
+                            <div class="divTableCell">@Html.ActionLink("Edit", "UpdateApp", new { id = item.id })</div>
+                        </div>
+                    }
+
+                </div>
+            </div>
+
+
+        }
+    </div>
+
+</div>

@@ -1,0 +1,21 @@
+﻿@model MyOneSignalDemo.Models.ServiceResponse
+@{
+    ViewBag.Title = "Update App";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+
+
+<div class="col-md-12">
+    @using (Html.BeginForm("AppManagementUpdate", "Home", FormMethod.Post))
+    {
+    <p>
+        <b>ID:</b> @Model.id
+        @Html.HiddenFor(m => m.id)
+    </p>
+        <p><b>Name:</b> @Html.TextBoxFor(m => m.name) </p>
+        
+        <input type="submit" value="Update" class="btn btn-default" />
+    }
+    <br />
+</div>

@@ -1,0 +1,16 @@
+﻿@model MyOneSignalDemo.Models.OneSignalModel
+@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Use this area to provide additional information.</p>
+<div class="col-md-offset-2 col-md-10">
+    @using (Html.BeginForm("AppManagement", "Home", FormMethod.Post))
+    {
+        <h2>Create an App</h2>
+        @Html.TextBoxFor(m => m.name)
+        <input type="submit" value="Create App" class="btn btn-default" />
+    }
+</div>

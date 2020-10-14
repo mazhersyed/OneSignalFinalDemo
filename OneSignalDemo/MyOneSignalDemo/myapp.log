@@ -1,0 +1,8 @@
+2020-10-13 15:34:30,707 [1] ERROR mylog - Overflow or underflow in the arithmetic operation.
+2020-10-13 15:34:38,821 [1] ERROR mylog - Overflow or underflow in the arithmetic operation.
+2020-10-13 15:36:35,360 [1] ERROR MyOneSignalDemo.Startup - Overflow or underflow in the arithmetic operation.
+2020-10-13 15:36:37,563 [1] ERROR MyOneSignalDemo.Startup - Overflow or underflow in the arithmetic operation.
+2020-10-13 15:39:45,696 [1] ERROR MyOneSignalDemo.Startup - Overflow or underflow in the arithmetic operation.
+2020-10-13 15:39:45,713 [1] ERROR MyOneSignalDemo.Startup - Overflow or underflow in the arithmetic operation.
+2020-10-13 15:41:43,025 [1] ERROR MyOneSignalDemo.Startup - Overflow or underflow in the arithmetic operation.
+2020-10-13 15:41:43,042 [1] ERROR MyOneSignalDemo.Startup - Overflow or underflow in the arithmetic operation.
